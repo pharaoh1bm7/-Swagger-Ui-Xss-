@@ -1,7 +1,8 @@
 swagger: '2.0'
 info:
   title: XSS test
-  description: |<image src/onerror=prompt(8)>
+  description: |
+<image src/onerror=prompt(8)>
 <img src/onerror=prompt(8)>
 <image src =q onerror=prompt(8)>
 <img src =q onerror=prompt(8)>
